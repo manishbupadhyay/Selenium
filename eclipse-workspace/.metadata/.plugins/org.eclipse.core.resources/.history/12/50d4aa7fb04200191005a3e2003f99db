@@ -1,0 +1,12 @@
+package listeners;
+
+import org.testng.annotations.Listeners;
+
+@Listeners(listeners.TestNGListeners.class)
+public class TestNGListenerDemo {
+	
+	public void test1{
+		System.out.println("I am inside Test 1");
+	}
+
+}

@@ -1,0 +1,19 @@
+package config;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Properties;
+
+public class PropertiesFile {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public static void getProperties() {
+		Properties prop = new Properties();
+		InputStream input = new FileInputStream("C:\\Users\\Ayan\\eclipse-workspace\\SeleniumJavaFramework\\src\\test\\java\\config\\PropertiesFile.java");
+	}
+
+}

@@ -1,0 +1,20 @@
+package utils;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtils {
+	
+	public static void getRowCount() {
+		try {
+			XSSFWorkbook workbook = new XSSFWorkbook("C:\\Users\\Ayan\\eclipse-workspace\\SeleniumJavaFramework\\excel\\data.xlsx");
+			XSSFSheet sheet = workbook.getSheet("Sheet1");
+		
+		}catch(Exception exp) {
+			System.out.println(exp.getMessage());
+			System.out.println(exp.getCause());
+			exp.printStackTrace();
+		}
+	}
+
+}
